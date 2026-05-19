@@ -536,23 +536,23 @@ HEXATOMBE
     <div class="pericia periciaVermelha">
       <div>
         <b>INTENÇÃO ASSASSINA (6 determinação)</b><br>
-        Você coloca seu capuz e desperta sua intenção assassina ficando mais forte, porem tome cuidado, tudo tem um preço.
+        Você coloca suas faixas e desperta sua intenção assassina ficando mais forte, porem tome cuidado, tudo tem um preço.
       </div>
       <button id="btnAssassino" onclick="toggleAssassino()">Ativar</button>
     </div>
 
     <div class="pericia">
   <div id="habFurtivo">
-    <b id="nomeFurtivo">ASSASSINATO FURTIVO (2 determinação)</b><br>
-    Uma vez por rodada, quando Jae atinge um alvo desprevenido ou que esteja flanqueando, ele causa +3d8 pontos de dano.
+    <b id="nomeFurtivo">DISPARO DA MORTE (3 determinação)</b><br>
+   Uma vez por rodada, quando faz um ataque com uma arma de fogo, Kemi sente o tempo desacelerar, o que permite mirar com precisão letal. Ela recebe +2 na margem de ameaça.
   </div>
-  <button onclick="usarHabilidade(2)">Usar</button>
+  <button onclick="usarHabilidade(3)">Usar</button>
 </div>
 
     <div class="pericia">
   <div id="habEsquiva">
-    <b id="nomeEsquiva">Esquiva Tática (2 determinação)</b><br>
-    Você pode fazer uma segunda reação especial de defesa na mesma rodada, desde que ela seja uma esquiva.
+    <b id="nomeEsquiva">Palpite Confiante (2 determinação)</b><br>
+    Há momentos em que você tem certeza de algo mesmo não sabendo como. Quando faz um teste de perícia baseado em Intelecto ou Presença, você pode gastar 2 PE para somar seu Intelecto no teste.
   </div>
   <button onclick="usarHabilidade(2)">Usar</button>
 </div>
@@ -560,18 +560,10 @@ HEXATOMBE
    <div class="pericia">
   <div id="habPerito">
     <b id="nomePerito">Perito (3 determinação)</b><br>
-    Uma vez por rodada, quando faz um teste de uma perícia em que é treinado, Jae soma +1d8 no resultado do teste.
+    Uma vez por rodada, quando faz um teste de uma perícia em que é treinada, kemi soma +1d8 no resultado do teste.
   </div>
   <button onclick="usarHabilidade(3)">Usar</button>
 </div>
-
-    <div class="pericia">
-  <div id="habZona">
-    <b id="nomeZona">ZONA DOS SUSSURROS (3 determinação)</b><br>
-    Jae gasta 1 rodada para marcar uma área equivalente a um cômodo com vários “X”. Nessa área, Jae recebe +2 em testes de ataque e não sofre penalidade por fazer testes de Furtividade após atacar ou fazer outras ações chamativas.
-  </div>
-  <button onclick="usarHabilidade(3)">Usar</button>
-      </div>
     
 <div class="pericia periciaVermelha">
 
@@ -1077,7 +1069,7 @@ function toggleAssassino() {
   const habFurtivo = document.getElementById("habFurtivo");
   const habEsquiva = document.getElementById("habEsquiva");
   const habPerito = document.getElementById("habPerito");
-  const habZona = document.getElementById("habZona");
+  
 
   if (!modoAssassino) {
 
@@ -1120,11 +1112,6 @@ function toggleAssassino() {
     habPerito.innerHTML = `
     <b style="color:red;">ANALÍTICO (3 determinação)</b><br>
     Uma vez por rodada, quando faz um teste de uma perícia em que é treinado, X soma +1d12 no resultado do teste.
-    `;
-
-    habZona.innerHTML = `
-    <b style="color:red;">ZONA DAS SOMBRAS (3 determinação)</b><br>
-    Jae gasta 1 rodada para marcar uma área equivalente a um cômodo com vários “X”. Nessa área, Jae recebe +5 em testes de ataque e não sofre penalidade por fazer testes de Furtividade após atacar ou fazer outras ações chamativas.
     `;
 
   } else {
@@ -1173,12 +1160,6 @@ function toggleAssassino() {
     Uma vez por rodada, quando faz um teste de uma perícia em que é treinado, Jae soma +1d8 no resultado do teste.
     `;
 
-    habZona.innerHTML = `
-   
-<b>ZONA DOS SUSSURROS (3 determinação)</b><br>
-Jae gasta 1 rodada para marcar uma área equivalente a um cômodo com vários “X”. Nessa área, Jae recebe +2 em testes de ataque e não sofre penalidade por fazer testes de Furtividade após atacar ou fazer outras ações chamativas.
-
-`;
 }
 
   atualizar();
