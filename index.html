@@ -1100,18 +1100,18 @@ function toggleAssassino() {
 
     // HABILIDADES ALTERADAS
     habFurtivo.innerHTML = `
-    <b style="color:red;">ASSASSINATO CRUEL (2 determinação)</b><br>
-    Uma vez por rodada, quando X atinge um alvo desprevenido ou que esteja flanqueando, ele causa +6d8 pontos de dano.
+    <b style="color:red;">DISPARO ESPIRAL (3 determinação)</b><br>
+   Uma vez por rodada, quando faz um ataque com uma arma de fogo, Kemi sente o tempo desacelerar, o que permite mirar com precisão letal e curvar seu projeto na direção do alvo. Ela recebe +2 na margem de ameaça e seu ataque ignora qualquer cobertura que nao seja completa e 10 pontos de resistência a dano.
     `;
 
     habEsquiva.innerHTML = `
-    <b style="color:red;">ESQUIVA SOMBRIA (2 determinação)</b><br>
-    Você pode fazer uma segunda reação especial de defesa na mesma rodada, desde que ela seja uma esquiva. Além disso, o atacante possui -1d20 no teste de ataque.
+    <b style="color:red;">Palpite Certeiro (2 determinação)</b><br>
+   Há momentos em que você tem certeza de algo mesmo não sabendo como. Quando faz um teste de perícia baseado em Intelecto ou Presença, você pode gastar 2 PE para somar seu Intelecto no teste. Além disso, se o seu teste for contra outra pessoa, ela tem -1d20 no teste
     `;
 
     habPerito.innerHTML = `
-    <b style="color:red;">ANALÍTICO (3 determinação)</b><br>
-    Uma vez por rodada, quando faz um teste de uma perícia em que é treinado, X soma +1d12 no resultado do teste.
+    <b style="color:red;">ANALÍTICA (3 determinação)</b><br>
+    Uma vez por rodada, quando faz um teste de uma perícia em que é treinada, Fantasma soma +1d12 no resultado do teste.
     `;
 
   } else {
@@ -1146,18 +1146,18 @@ function toggleAssassino() {
 
     // VOLTA HABILIDADES NORMAIS
     habFurtivo.innerHTML = `
-    <b>ASSASSINATO FURTIVO (2 determinação)</b><br>
-    Uma vez por rodada, quando Jae atinge um alvo desprevenido ou que esteja flanqueando, ele causa +3d8 pontos de dano.
+    <b>DISPARO DA MORTE (3 determinação)</b><br>
+  Uma vez por rodada, quando faz um ataque com uma arma de fogo, Kemi sente o tempo desacelerar, o que permite mirar com precisão letal. Ela recebe +2 na margem de ameaça.
     `;
 
     habEsquiva.innerHTML = `
-    <b>Esquiva Tática (2 determinação)</b><br>
-    Você pode fazer uma segunda reação especial de defesa na mesma rodada, desde que ela seja uma esquiva.
+    <b>Palpite Confiante (2 determinação)</b><br>
+   Há momentos em que você tem certeza de algo mesmo não sabendo como. Quando faz um teste de perícia baseado em Intelecto ou Presença, você pode gastar 2 PE para somar seu Intelecto no teste.
     `;
 
     habPerito.innerHTML = `
-    <b>Perito (3 determinação)</b><br>
-    Uma vez por rodada, quando faz um teste de uma perícia em que é treinado, Jae soma +1d8 no resultado do teste.
+    <b>PERITO (3 determinação)</b><br>
+    Uma vez por rodada, quando faz um teste de uma perícia em que é treinada, Kemi soma +1d8 no resultado do teste.
     `;
 
 }
@@ -1246,12 +1246,12 @@ function desbloquearSabor() {
   hab.innerHTML = `
 
 <b style="color:red;">
-SABOR DO SILÊNCIO
+SEDE DE VINGANÇA
 </b>
 <br><br>
 
 <span style="color:red;">
-"O silêncio que te atormentou agora assombra o pesadelo dos outros."
+"Uma vez, você cuidou de alguém, mas a perdeu. É hora de fazer os responsáveis pagarem."
 </span>
 
 <br><br>
@@ -1262,7 +1262,7 @@ Gatilho
 <br>
 
 <span style="color:white;">
-Você precisa gastar uma ação padrão para provar o sangue de um ser adjante que esteja machucado.
+Ouvir o grito de morte de alguém que você tentou proteger. Em termos de regras, um aliado deve estar morrendo e você deve escutar o grito dele ou conseguir enxergá-lo..
 </span>
 
 <br><br>
@@ -1273,7 +1273,7 @@ Efeito
 <br>
 
 <span style="color:white;">
-Seus ataques causam +1d8 pontos de dano, e recebem +2 na margem de ameaça. Além disso, se fizer um acerto crítico, você corta a boca do alvo, o silenciando, impedindo de se comunicar e utilizar qualquer poder ou ritual por 1d4 rodadas. Os efeitos duram até o final da cena.
+Como reação (ou seja fora da sua rodada ou sem gastar açao), você pode fazer um ataque contra quem deixou seu aliado morrendo. Você também pode usar essa habilidade  para fazer um ataque como reação,  antes de ficar inconsciente, contra um inimigo que te deixou morrendo.
 </span>
 
   `;
@@ -2258,24 +2258,21 @@ function atualizarSegredos() {
 
     // habilidades transformadas
     habFurtivo.innerHTML = `
-    <b style="color:red;">ASSASSINATO CRUEL (2 determinação)</b><br>
-    Uma vez por rodada, quando X atinge um alvo desprevenido ou que esteja flanqueando, ele causa +6d8 pontos de dano.
+    <b style="color:red;">DISPARO ESPIRAL (3 determinação)</b><br>
+   Uma vez por rodada, quando faz um ataque com uma arma de fogo, Kemi sente o tempo desacelerar, o que permite mirar com precisão letal e curvar seu projeto na direção do alvo. Ela recebe +2 na margem de ameaça e seu ataque ignora qualquer cobertura que nao seja completa e 10 pontos de resistência a dano.
     `;
 
     habEsquiva.innerHTML = `
-    <b style="color:red;">ESQUIVA SOMBRIA (2 determinação)</b><br>
-    Você pode fazer uma segunda reação especial de defesa na mesma rodada, desde que ela seja uma esquiva. Além disso, o atacante possui -1d20 no teste de ataque.
+    <b style="color:red;">Palpite Certeiro (2 determinação)</b><br>
+   Há momentos em que você tem certeza de algo mesmo não sabendo como. Quando faz um teste de perícia baseado em Intelecto ou Presença, você pode gastar 2 PE para somar seu Intelecto no teste. Além disso, se o seu teste for contra outra pessoa, ela tem -1d20 no teste
     `;
 
     habPerito.innerHTML = `
-    <b style="color:red;">ANALÍTICO (3 determinação)</b><br>
-    Uma vez por rodada, quando faz um teste de uma perícia em que é treinado, X soma +1d12 no resultado do teste.
+    <b style="color:red;">ANALÍTICA (3 determinação)</b><br>
+    Uma vez por rodada, quando faz um teste de uma perícia em que é treinada, Fantasma soma +1d12 no resultado do teste.
     `;
 
-    habZona.innerHTML = `
-    <b style="color:red;">ZONA DAS SOMBRAS (3 determinação)</b><br>
-    Jae gasta 1 rodada para marcar uma área equivalente a um cômodo com vários “X”. Nessa área, Jae recebe +5 em testes de ataque e não sofre penalidade por fazer testes de Furtividade após atacar ou fazer outras ações chamativas.
-    `;
+  
     setTimeout(() => {
   atualizar();
 }, 10);
