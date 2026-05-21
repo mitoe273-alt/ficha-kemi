@@ -2256,9 +2256,20 @@ function atualizarSegredos() {
   const habZona = document.getElementById("habZona");
 
   // restaura modo assassino
-  if (modoAssassino) {
+if (modoAssassino) {
 
-    document.body.classList.add("modoAssassino");
+  // reaplica os bônus caso tenha fechado com o modo ativo
+  if (vidaMax <= 100) {
+    vidaMax += bonusVidaAssassino;
+    vidaAtual += bonusVidaAssassino;
+  }
+
+  if (detMax <= 10) {
+    detMax += bonusDetAssassino;
+    detAtual += bonusDetAssassino;
+  }
+
+  document.body.classList.add("modoAssassino");
 
     img.src = "Fantasma.png";
 
